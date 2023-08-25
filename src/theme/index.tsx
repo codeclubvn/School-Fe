@@ -2,27 +2,20 @@
 
 import React from 'react';
 
-import { ThemeProvider, createTheme } from '@mui/material';
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      '500': '#1a73e8',
-    },
-  },
-  components: {
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          textTransform: 'none',
-        },
-      },
-    },
-  },
-});
+import { ConfigProvider } from 'antd';
 
 const CusThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
+  return (
+    <ConfigProvider
+      theme={{
+        token: {
+          colorPrimary: '#1890ff',
+        },
+      }}
+    >
+      {children}
+    </ConfigProvider>
+  );
 };
 
 export default CusThemeProvider;
