@@ -2,11 +2,13 @@
 
 ## Libraries:
 
-- NextJS
+- NextJS 13
 - MUI
 - TailwindCSS
-- Husky, Lint Stage
-- Eslint, Prettier
+- Husky, Lint Stage: Pre-commit check -> run format và check toàn bộ code -> tránh code lỗi, sai format chung dẫn đến conflict.
+- Eslint, Prettier: Format code chung cho team member
+- Dayjs - format datetime
+- Lodash
   ...
 
 ## Folder structure:
@@ -33,4 +35,18 @@ src
 
 ```
 npm run prepare
+```
+
+```
+yarn prepare
+```
+
+#### Format code
+
+```
+npm run format
+```
+
+```
+yarn format
 ```
