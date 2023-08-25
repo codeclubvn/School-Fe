@@ -31,7 +31,7 @@ src
 ├── theme // Config global theme nếu sử dụng các UI Lib
 ```
 
-#### Run husky
+#### Init husky
 
 ```
 npm run prepare
