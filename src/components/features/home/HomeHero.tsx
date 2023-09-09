@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Btn from '@/components/shared/Btn';
+import { Button } from '@/components/ui/button';
 
 const HomeHero = () => {
   return (
     <div>
       <h2>HomeHero</h2>
-      <Btn>Button</Btn>
+      <Button>Button</Button>
     </div>
   );
 };

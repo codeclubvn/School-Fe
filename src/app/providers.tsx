@@ -4,12 +4,10 @@ import { Toaster } from 'react-hot-toast';
 
 import { TOAST_DEFAULT_OPTIONS } from '@/config/helpers/toast.helper';
 
-import CusThemeProvider from '@/theme';
-
 const AppProvider = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      <CusThemeProvider>{children}</CusThemeProvider>
+      {children}
       <Toaster {...TOAST_DEFAULT_OPTIONS} />
     </>
   );
