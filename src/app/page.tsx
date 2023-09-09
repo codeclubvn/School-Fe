@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 import HomeHero from '@/components/features/home/HomeHero';
 
 export default function Home() {
@@ -7,7 +5,6 @@ export default function Home() {
     <div className="flex flex-col">
       <h1>NextJS Boilerplate</h1>
       <HomeHero />
-      <Link href={'/about'}>About us</Link>
     </div>
   );
 }
