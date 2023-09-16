@@ -1,5 +1,6 @@
 'use client';
 
+import TopCollection from '@/components/manager/TopCollection';
 import { Button, buttonVariants } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 
@@ -13,7 +14,11 @@ const Dashboard = () => {
       >
         test
       </Button>
-      <Input onChange={(e) => console.log('e :', e.target.value)} />
+      {/* <Input
+        prefix="this is the prefix"
+        onChange={(e) => console.log('e :', e.target.value)}
+      /> */}
+      <TopCollection title="Thêm học sinh mới" search />
     </div>
   );
 };
