@@ -4,7 +4,7 @@ const ManagerLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="flex gap-10">
       <ManagerSidebar />
-      <div>{children}</div>
+      <div className="flex-1">{children}</div>
     </div>
   );
 };

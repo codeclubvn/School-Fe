@@ -11,7 +11,7 @@ interface TopCollectionProps {
 const TopCollection = ({ title, search, onSearch, className }: TopCollectionProps) => {
   return (
     <div className={`flex w-full items-center justify-between ${className}`}>
-      <p className="text-black text-4xl">{title}</p>
+      <p className="text-black text-[34px] leading-[34px]">{title}</p>
       {search && (
         <Input
           label="This is the label"
