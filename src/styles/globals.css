@@ -74,4 +74,9 @@
     @apply bg-background text-foreground;
   }
 }
-
+.btnLogin{
+  display: flex;
+  padding: 12px 50px;
+  border-radius: 40px;
+  background-color: #0E81A5;
+}

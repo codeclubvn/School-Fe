@@ -1,8 +1,8 @@
 import style from './layout.module.css'
 
-import Email from '../../../public/icon/email';
-import Phone from '../../../public/icon/Phone';
-import Group from '../../../public/icon/groupsocial';
+import Email from '../../config/icon/email';
+import Phone from '../../config/icon/Phone';
+import Group from '../../config/icon/groupsocial';
 const Footer = () => {
   return <footer>
     <div className={style.footer}>

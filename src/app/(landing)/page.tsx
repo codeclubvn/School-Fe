@@ -9,19 +9,19 @@ import introduce from '../../../public/img/anhcogiao.png'
 import manTech from '../../../public/img/mantalkwithevo.png'
 import contact from '../../../public/img/contact.png'
 
-import Arrow from '../../../public/icon/arrow';
-import Ellip from '../../../public/icon/ellip';
-import Upper from '../../../public/icon/upperArrow';
-import PlayIcon from '../../../public/icon/play';
-import Audio from '../../../public/icon/audio';
-import Live from '../../../public/icon/live';
-import ArrowFly from '../../../public/icon/arrowfly';
+import Arrow from '../../config/icon/arrow';
+import Ellip from '../../config/icon/ellip';
+import Upper from '../../config/icon/upperArrow';
+import PlayIcon from '../../config/icon/play';
+import Audio from '../../config/icon/audio';
+import Live from '../../config/icon/live';
+import ArrowFly from '../../config/icon/arrowfly';
 export default function Home() {
   const revaliaFont:any = revalia.className;
   const robotoFont :any = roboto.className
 
   return (
-    <div className={`"flex flex-col" ${style.wrapper}`}>
+    <div className={`flex flex-col ${style.wrapper}`}>
           <div className={style.ellipOne}></div>
           <div className={style.ellipTwo}></div>
           <Arrow className={style.arrow} />
@@ -39,7 +39,7 @@ export default function Home() {
                         <div className={style.circle}>
                           <div className={style.triangle}></div>
                         </div>
-                      <span >WATCH ME</span>
+                      <span >WATCH VIDEO</span>
                       </button>
                   </div>
                   <div className={style.information}>
@@ -54,7 +54,7 @@ export default function Home() {
                   </div>
               </div>
             <div className={style.picture}>
-              <ArrowFly className={style.arrfly}/>
+              {/* <ArrowFly className={style.arrfly}/> */}
                 <Image src={introduce}
                     alt='Introduce about us'
                     priority={true}
@@ -113,7 +113,7 @@ export default function Home() {
                 boxShadow: `1px 10px #b6b6b6`,
               }}
             />
-            <div className={`${roboto} ${style.aboutOurTeacher }`}>'
+            <div className={`${roboto} ${style.aboutOurTeacher }`}>
                 <div>
                 <h2 className={style.titleAbOurTeacher}>Bridging Teachers and Students in a Virtual Learning Environmentt</h2>
                 <p className={style.paragraphAbTeacher}>In a virtual learning environment, teachers and students break through the constraints of traditional classrooms. Using advanced online platforms and tools, teachers can interact with students in real-time, fostering significant connectivity and collaboration. This virtual space expands both space and time, allowing seamless interaction between teachers and students from anywhere in the world.</p>

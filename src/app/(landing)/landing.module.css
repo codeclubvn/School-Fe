@@ -258,9 +258,9 @@
 /*  about teacher */
 .obTeacher{
     display: flex;
-    width: 1200px;
-    height: 500px;;
-    margin: auto;
+    width: auto;
+    height: 500px;
+    justify-content: center;
 }
 .aboutOurTeacher{
    display: flex;

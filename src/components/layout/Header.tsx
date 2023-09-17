@@ -1,7 +1,7 @@
 'use client'
-import { Button } from '../ui/button';
-import Link from 'next/link';
 import style from './layout.module.css'
+import Link from 'next/link';
+import { Button } from '../ui/button';
 
 const Header = () => {
   return <header className={style.header} >
@@ -20,7 +20,7 @@ const Header = () => {
         <Link href={'/'}>Contact Us</Link>
         </div>
       </div>
-      <Button className={style.a}>Sign in</Button>
+      <Button className='btnLogin'>Sign Up</Button>
   </header>;
 };
 
