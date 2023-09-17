@@ -11,7 +11,7 @@ const ManagerSidebar = () => {
   const menu = [
     {
       name: 'Dashboard',
-      href: '/add-student',
+      href: '/dashboard',
       icon: <RxDashboard />,
     },
     {

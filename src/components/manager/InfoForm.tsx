@@ -13,7 +13,7 @@ const InfoForm = ({ title, children, className }: InfoFormProps) => {
       <div className="bg-[#0E81A5] w-full">
         <h2 className=" text-[34px] leading-[34px] px-2.5 py-3 text-white">{title}</h2>
       </div>
-      <div className="w-full py-6">{children}</div>
+      <div className="w-full p-6 pr-20">{children}</div>
     </div>
   );
 };
