@@ -1,13 +1,14 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-
-import MainLayout from '@/components/layout/MainLayout';
+import { Roboto } from 'next/font/google';
 
 import AppProvider from './providers';
 
 import '@/styles/globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
   title: 'School FE',
@@ -17,10 +18,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <AppProvider>
-          <MainLayout>{children}</MainLayout>
-        </AppProvider>
+      <body className={roboto.className}>
+        <AppProvider>{children}</AppProvider>
       </body>
     </html>
   );
