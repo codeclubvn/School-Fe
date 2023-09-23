@@ -1,51 +1,9 @@
 'use client';
 
-import Modal from '@/components/modals/FormModal';
+import ForgotPasswordForm from '@/components/features/authForm/forgotpassword/ForgotPasswordForm';
 
-const RegisterForm = () => {
-  const title = [
-    {
-      title: 'Forgot Password',
-
-      urlName: 'Register',
-      url: '/register',
-    },
-  ];
-
-  const bodyContent = [
-    {
-      nameField: 'email',
-      nameLabel: 'Email',
-      type: 'email',
-      placeholder: 'elearning@gmail.com',
-    },
-    {
-      nameField: 'password',
-      nameLabel: 'Password',
-      type: 'password',
-      checkWidth: true,
-      placeholder: '********',
-    },
-    {
-      nameField: 'confirmpassword',
-      nameLabel: 'Confirm Password',
-      type: 'password',
-      checkWidth: true,
-      placeholder: '********',
-    },
-  ];
-
-  return (
-    <div className="">
-      <Modal
-        listTitle={title}
-        listBody={bodyContent}
-        actionLabel="Change Password"
-        image="/images/login1.png"
-        locationImage="right"
-      />
-    </div>
-  );
+const PageForgotPassword = () => {
+  return <ForgotPasswordForm />;
 };
 
-export default RegisterForm;
+export default PageForgotPassword;
