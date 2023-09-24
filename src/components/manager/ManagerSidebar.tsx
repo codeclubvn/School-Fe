@@ -16,27 +16,27 @@ const ManagerSidebar = () => {
       icon: <RxDashboard />,
     },
     {
-      name: 'Lịch',
+      name: 'Calendar',
       href: '/calendar',
       icon: <AiFillCalendar />,
     },
     {
-      name: 'Thi',
+      name: 'Exam',
       href: '/exam',
       icon: <AiFillCalendar />,
     },
     {
-      name: 'Kết quả',
+      name: 'Result',
       href: '/result',
       icon: <AiFillCalendar />,
     },
     {
-      name: 'Học Sinh',
+      name: 'Student',
       href: '/student',
       icon: <AiFillCalendar />,
     },
     {
-      name: 'Giáo Viên',
+      name: 'Teacher',
       href: '/teacher',
       icon: <AiFillCalendar />,
     },

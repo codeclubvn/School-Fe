@@ -49,11 +49,10 @@ const Dashboard = () => {
     setStudentInfo({ ...studentInfo, [field]: val });
   };
 
-  console.log('parentInfo :', parentInfo.type);
   return (
     <div className="pt-12 pr-20">
-      <TopCollection title="Thêm học sinh mới" />
-      <InfoForm className="mt-5" title="Thông tin học sinh">
+      <TopCollection title="Add new student" />
+      <InfoForm className="mt-5" title="Student Info">
         <div className="flex gap-2.5">
           <div className="h-full flex items-center justify-center px-9 pt-8">
             <Image
@@ -100,24 +99,24 @@ const Dashboard = () => {
         </div>
       </InfoForm>
 
-      <InfoForm title="Phụ huynh" className="mt-5">
+      <InfoForm title="Parent" className="mt-5">
         <div className="grid grid-cols-2 gap-10">
-          <Input placeholder="Tên phụ huynh" />
-          <Input placeholder="Công việc" />
+          <Input placeholder="name" />
+          <Input placeholder="job" />
           <div className="grid grid-cols-2 gap-4">
-            <Input placeholder="Ngày sinh" />
-            <Input placeholder="Nơi sinh" />
+            <Input placeholder="date of birth" />
+            <Input placeholder="address" />
           </div>
-          <Input placeholder="Số điện thoại" />
+          <Input placeholder="phone" />
           <div className="col-span-2 w-full flex justify-end gap-36">
             <Radio
-              label="Cha"
+              label="Dad"
               checked={parentInfo.type === ParentType.DAD}
               value={ParentType.DAD}
               onClick={(val) => setParentInfo({ type: val as ParentType })}
             />
             <Radio
-              label="Mẹ"
+              label="Mom"
               checked={parentInfo.type === ParentType.MOM}
               value={ParentType.MOM}
               onClick={(val) => setParentInfo({ type: val as ParentType })}
