@@ -49,6 +49,7 @@ const Dashboard = () => {
     setStudentInfo({ ...studentInfo, [field]: val });
   };
 
+  console.log('parentInfo :', parentInfo.type);
   return (
     <div className="pt-12 pr-20">
       <TopCollection title="Thêm học sinh mới" />
@@ -127,10 +128,10 @@ const Dashboard = () => {
 
       <div className="mt-10 flex items-center justify-end gap-6">
         <button className="border border-[#0E81A5] rounded-[40px] text-[#0E81A5] text-sm py-2 px-5">
-          Lưu vào dữ liệu
+          Save Data
         </button>
         <button className="bg-[#0E81A5] rounded-[40px] text-white text-sm py-2 px-5">
-          Thêm
+          Add
         </button>
       </div>
     </div>

@@ -1,55 +1,56 @@
-import { Fragment } from 'react';
+import { DetailedHTMLProps, Fragment, InputHTMLAttributes, ReactNode } from 'react';
 
 import './style.css';
 
-interface InputProps {
+interface InputProps
+  extends Omit<
+    DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>,
+    'onChange'
+  > {
   label?: string;
-  className?: string;
-  placeholder?: string;
   value?: string;
   error?: boolean;
   disabled?: boolean;
   onChange?: (val: string) => void;
-  size?: 'md' | 'lg';
+  sizes?: 'md' | 'lg';
   color?: 'white' | 'gray';
-  prefix?: React.ReactNode;
-  suffix?: React.ReactNode;
+  customPrefix?: ReactNode;
+  customSuffix?: ReactNode;
 }
 
 const Input = ({
   label,
-  className,
-  placeholder,
   value,
   error,
   disabled,
   onChange,
-  size = 'md',
+  sizes = 'md',
   color = 'white',
-  prefix,
-  suffix,
+  customPrefix,
+  customSuffix,
+  ...rest
 }: InputProps) => {
   return (
     <div className="flex flex-col justify-start">
       {label && <label className="mb-1 text-xl leading-6">{label}</label>}
       <div className="relative">
-        {prefix && (
+        {customPrefix && (
           <div className="absolute left-1.5 inset-y-0 flex items-center justify-center">
-            {prefix}
+            {customPrefix}
           </div>
         )}
         <input
-          className={`input ${error ? 'input--error' : ''} input--${size}${
-            prefix ? '--prefix' : ''
-          }${suffix ? '--suffix' : ''} input--${color} ${className}`}
+          className={`input ${error ? 'input--error' : ''} input--${sizes}${
+            customPrefix ? '--prefix' : ''
+          }${customSuffix ? '--suffix' : ''} input--${color} ${rest.className}`}
           value={value}
-          placeholder={placeholder}
+          placeholder={rest.placeholder}
           disabled={disabled}
           onChange={(e) => onChange && onChange(e.target.value)}
         />
-        {suffix && (
+        {customSuffix && (
           <div className="absolute right-1.5 inset-y-0 flex items-center justify-center">
-            {suffix}
+            {customSuffix}
           </div>
         )}
       </div>
