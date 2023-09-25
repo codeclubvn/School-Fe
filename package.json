@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "pre-commit": "lint-staged",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -11,7 +12,6 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@next/font": "^13.4.19",
     "@radix-ui/react-slot": "^1.0.2",
     "@types/node": "20.4.8",
     "@types/react": "18.2.18",
