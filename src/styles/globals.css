@@ -74,9 +74,14 @@
     @apply bg-background text-foreground;
   }
 }
+
 .btnLogin {
   display: flex;
   padding: 12px 50px;
   border-radius: 40px;
   background-color: #0e81a5;
+}
+
+.container-layout {
+  @apply m-auto max-w-full overflow-hidden;
 }

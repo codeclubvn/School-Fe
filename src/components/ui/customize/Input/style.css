@@ -1,0 +1,35 @@
+.input {
+  @apply w-full rounded-lg border border-[#A5AAB5] focus:outline-none;
+}
+
+.input::placeholder {
+  @apply text-base tracking-[1.2px] text-[#A5AAB5];
+}
+
+.input--md {
+  @apply p-2.5 text-base;
+}
+
+.input--md--prefix {
+  @apply p-2.5 pl-8 text-base;
+}
+
+.input--md--suffix {
+  @apply p-2.5 pr-8 text-base;
+}
+
+.input--md--prefix--suffix {
+  @apply px-8 py-2.5 text-base;
+}
+
+.input--white {
+  @apply bg-white;
+}
+
+.input--gray {
+  @apply bg-gray-600;
+}
+
+.input--error {
+  @apply border-red-500;
+}
