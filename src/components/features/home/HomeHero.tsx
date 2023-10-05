@@ -6,7 +6,9 @@ const HomeHero = () => {
   return (
     <div>
       <h2>HomeHero</h2>
-      <Button>Button</Button>
+      <Button className="test" variant="destructive">
+        Button
+      </Button>
     </div>
   );
 };
