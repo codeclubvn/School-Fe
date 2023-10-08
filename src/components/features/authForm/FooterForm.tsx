@@ -3,9 +3,9 @@
 import Image from 'next/image';
 
 const listImage = [
-  { src: '/logo_google.svg', width: 40, height: 40, alt: 'logo google' },
-  { src: '/logos_facebook.svg', width: 40, height: 40, alt: 'logo google' },
-  { src: '/logo_apple.svg', width: 40, height: 40, alt: 'logo google' },
+  { src: '/logo_google.svg', alt: 'logo google' },
+  { src: '/logos_facebook.svg', alt: 'logo google' },
+  { src: '/logo_apple.svg', alt: 'logo google' },
 ];
 const FooterForm = () => {
   return (
@@ -18,8 +18,8 @@ const FooterForm = () => {
           <Image
             key={item.src}
             src={item.src}
-            width={item.width}
-            height={item.height}
+            width={40}
+            height={40}
             alt={item.alt}
             className="hover:cursor-pointer"
           />
