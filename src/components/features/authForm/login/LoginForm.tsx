@@ -32,7 +32,7 @@ const LoginForm = () => {
       password: '',
     },
   });
-  // 2. Define a submit handler.
+
   function onSubmit(values: z.infer<typeof loginFormSchema>) {
     console.log(values);
   }
@@ -64,7 +64,7 @@ const LoginForm = () => {
             <div className="text-6xl font-bold mb-2">Login</div>
 
             <span className="text-2xl font-normal ">
-              Don&apos;t have an account yet?
+              {`Don't have an account yet?`}
               <Link
                 href="/register"
                 className="text-primaryColor hover:cursor-pointer lg:ml-2"
@@ -75,7 +75,6 @@ const LoginForm = () => {
           </section>
           {/* BODY */}
           <div className=" w-full pb-4 lg:mr-4 md:mr-4">
-            {/* <div className={`flex gap-8 mt-4`}> */}
             <FormField
               name="username"
               render={({ field }) => (
