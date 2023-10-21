@@ -1,5 +1,3 @@
-'use client';
-
 import RegisterForm from '@/components/features/authForm/register/RegisterForm';
 
 const PageRegister = () => {
