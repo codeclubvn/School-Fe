@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "pre-commit": "lint-staged",
-    "dev": "next dev -p 3005",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start ",
     "lint": "next lint",
@@ -41,7 +41,6 @@
     "tailwindcss": "3.3.3",
     "tailwindcss-animate": "1.0.7",
     "typescript": "5.1.6",
-    "yarn": "^1.22.19",
     "zod": "^3.22.2"
   },
   "devDependencies": {

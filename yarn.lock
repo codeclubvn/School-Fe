@@ -645,7 +645,7 @@
   dependencies:
     "tslib" "^2.4.0"
 
-"@trivago/prettier-plugin-sort-imports@^4.2.0":
+"@trivago/prettier-plugin-sort-imports@4.2.0":
   "integrity" "sha512-YBepjbt+ZNBVmN3ev1amQH3lWCmHyt5qTbLCp/syXJRu/Kw2koXh44qayB1gMRxcL/gV8egmjN5xWSrYyfUtyw=="
   "resolved" "https://registry.npmjs.org/@trivago/prettier-plugin-sort-imports/-/prettier-plugin-sort-imports-4.2.0.tgz"
   "version" "4.2.0"
@@ -989,7 +989,7 @@
   "resolved" "https://registry.npmjs.org/axe-core/-/axe-core-4.7.2.tgz"
   "version" "4.7.2"
 
-"axios@^1.4.0":
+"axios@1.4.0":
   "integrity" "sha512-S4XCWMEmzvo64T9GfvQDOXgYRDJ/wsSZc7Jvdgx5u1sd0JwsuPLqb3SYmusag+edF6ziyMensPVqLTSc1PiSEA=="
   "resolved" "https://registry.npmjs.org/axios/-/axios-1.4.0.tgz"
   "version" "1.4.0"
@@ -1160,7 +1160,7 @@
   optionalDependencies:
     "fsevents" "~2.3.2"
 
-"class-variance-authority@^0.7.0":
+"class-variance-authority@0.7.0":
   "integrity" "sha512-jFI8IQw4hczaL4ALINxqLEXQbWcNjoSkloa4IaufXCJr6QawJyw7tuRysRsrE8w2p/4gGaxKIt/hX3qz/IbD1A=="
   "resolved" "https://registry.npmjs.org/class-variance-authority/-/class-variance-authority-0.7.0.tgz"
   "version" "0.7.0"
@@ -1217,7 +1217,7 @@
   "resolved" "https://registry.npmjs.org/clone/-/clone-1.0.4.tgz"
   "version" "1.0.4"
 
-"clsx@^2.0.0", "clsx@2.0.0":
+"clsx@2.0.0":
   "integrity" "sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q=="
   "resolved" "https://registry.npmjs.org/clsx/-/clsx-2.0.0.tgz"
   "version" "2.0.0"
@@ -1322,7 +1322,7 @@
   "resolved" "https://registry.npmjs.org/data-uri-to-buffer/-/data-uri-to-buffer-4.0.1.tgz"
   "version" "4.0.1"
 
-"dayjs@^1.11.9":
+"dayjs@1.11.9":
   "integrity" "sha512-QvzAURSbQ0pKdIye2txOzNaHmxtUBXerpY0FJsFXUMKbIZeFm5ht1LS/jFsrncjnmtv8HsG0W2g6c0zUjZWmpA=="
   "resolved" "https://registry.npmjs.org/dayjs/-/dayjs-1.11.9.tgz"
   "version" "1.11.9"
@@ -1570,7 +1570,7 @@
     "eslint-plugin-react" "^7.31.7"
     "eslint-plugin-react-hooks" "5.0.0-canary-7118f5dd7-20230705"
 
-"eslint-config-prettier@^9.0.0":
+"eslint-config-prettier@9.0.0":
   "integrity" "sha512-IcJsTkJae2S35pRsRAwoCE+925rJJStOdkKnLVgtE+tEpqU0EVVM7OqrwxqgptKdX29NUwC82I5pXsGFIgSevw=="
   "resolved" "https://registry.npmjs.org/eslint-config-prettier/-/eslint-config-prettier-9.0.0.tgz"
   "version" "9.0.0"
@@ -1651,7 +1651,7 @@
     "object.fromentries" "^2.0.6"
     "semver" "^6.3.0"
 
-"eslint-plugin-prettier@^5.0.0":
+"eslint-plugin-prettier@5.0.0":
   "integrity" "sha512-AgaZCVuYDXHUGxj/ZGu1u8H8CYgDY3iG6w5kUFw4AzMVXzB7VvbKgYR4nATIN+OvUrghMbiDLeimVjVY5ilq3w=="
   "resolved" "https://registry.npmjs.org/eslint-plugin-prettier/-/eslint-plugin-prettier-5.0.0.tgz"
   "version" "5.0.0"
@@ -2175,7 +2175,7 @@
   "resolved" "https://registry.npmjs.org/human-signals/-/human-signals-4.3.1.tgz"
   "version" "4.3.1"
 
-"husky@^8.0.3":
+"husky@8.0.3":
   "integrity" "sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg=="
   "resolved" "https://registry.npmjs.org/husky/-/husky-8.0.3.tgz"
   "version" "8.0.3"
@@ -2569,7 +2569,7 @@
   "resolved" "https://registry.npmjs.org/lines-and-columns/-/lines-and-columns-1.2.4.tgz"
   "version" "1.2.4"
 
-"lint-staged@^13.2.3":
+"lint-staged@13.2.3":
   "integrity" "sha512-zVVEXLuQIhr1Y7R7YAWx4TZLdvuzk7DnmrsTNL0fax6Z3jrpFcas+vKbzxhhvp6TA55m1SQuWkpzI1qbfDZbAg=="
   "resolved" "https://registry.npmjs.org/lint-staged/-/lint-staged-13.2.3.tgz"
   "version" "13.2.3"
@@ -3158,12 +3158,12 @@
   dependencies:
     "fast-diff" "^1.1.2"
 
-"prettier-plugin-tailwindcss@^0.4.1":
+"prettier-plugin-tailwindcss@0.4.1":
   "integrity" "sha512-hwn2EiJmv8M+AW4YDkbjJ6HlZCTzLyz1QlySn9sMuKV/Px0fjwldlB7tol8GzdgqtkdPtzT3iJ4UzdnYXP25Ag=="
   "resolved" "https://registry.npmjs.org/prettier-plugin-tailwindcss/-/prettier-plugin-tailwindcss-0.4.1.tgz"
   "version" "0.4.1"
 
-"prettier@^3.0.1":
+"prettier@3.0.1":
   "integrity" "sha512-fcOWSnnpCrovBsmFZIGIy9UqK2FaI7Hqax+DIO0A9UxeVoY4iweyaFjS5TavZN97Hfehph0nhsZnjlVKzEQSrQ=="
   "resolved" "https://registry.npmjs.org/prettier/-/prettier-3.0.1.tgz"
   "version" "3.0.1"
@@ -3208,19 +3208,19 @@
     "loose-envify" "^1.1.0"
     "scheduler" "^0.23.0"
 
-"react-hook-form@^7.46.1":
+"react-hook-form@7.46.1":
   "integrity" "sha512-0GfI31LRTBd5tqbXMGXT1Rdsv3rnvy0FjEk8Gn9/4tp6+s77T7DPZuGEpBRXOauL+NhyGT5iaXzdIM2R6F/E+w=="
   "resolved" "https://registry.npmjs.org/react-hook-form/-/react-hook-form-7.46.1.tgz"
   "version" "7.46.1"
 
-"react-hot-toast@^2.4.1":
+"react-hot-toast@2.4.1":
   "integrity" "sha512-j8z+cQbWIM5LY37pR6uZR6D4LfseplqnuAO4co4u8917hBUvXlEqyP1ZzqVLcqoyUesZZv/ImreoCeHVDpE5pQ=="
   "resolved" "https://registry.npmjs.org/react-hot-toast/-/react-hot-toast-2.4.1.tgz"
   "version" "2.4.1"
   dependencies:
     "goober" "^2.1.10"
 
-"react-icons@^4.11.0":
+"react-icons@4.11.0":
   "integrity" "sha512-V+4khzYcE5EBk/BvcuYRq6V/osf11ODUM2J8hg2FDSswRrGvqiYUYPRy4OdrWaQOBj4NcpJfmHZLNaD+VH0TyA=="
   "resolved" "https://registry.npmjs.org/react-icons/-/react-icons-4.11.0.tgz"
   "version" "4.11.0"
@@ -3443,7 +3443,7 @@
   dependencies:
     "lru-cache" "^6.0.0"
 
-"shadcn-ui@^0.3.0":
+"shadcn-ui@0.3.0":
   "integrity" "sha512-il58BF1iKc5Np8lcXJWWh2F5G+yW8FXLO1UvzlU8kxK7AOjAo4vdgsDIuF+ypaJAN3hY2rpLcoZoDxCF4imuNA=="
   "resolved" "https://registry.npmjs.org/shadcn-ui/-/shadcn-ui-0.3.0.tgz"
   "version" "0.3.0"
@@ -3723,12 +3723,12 @@
     "@pkgr/utils" "^2.3.1"
     "tslib" "^2.5.0"
 
-"tailwind-merge@^1.14.0":
+"tailwind-merge@1.14.0":
   "integrity" "sha512-3mFKyCo/MBcgyOTlrY8T7odzZFx+w+qKSMAmdFzRvqBfLlSigU6TZnlFHK0lkMwj9Bj8OYU+9yW9lmGuS0QEnQ=="
   "resolved" "https://registry.npmjs.org/tailwind-merge/-/tailwind-merge-1.14.0.tgz"
   "version" "1.14.0"
 
-"tailwindcss-animate@^1.0.7":
+"tailwindcss-animate@1.0.7":
   "integrity" "sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA=="
   "resolved" "https://registry.npmjs.org/tailwindcss-animate/-/tailwindcss-animate-1.0.7.tgz"
   "version" "1.0.7"
@@ -4062,11 +4062,6 @@
   "integrity" "sha512-2eHWfjaoXgTBC2jNM1LRef62VQa0umtvRiDSk6HSzW7RvS5YtkabJrwYLLEKWBc8a5U2PTSCs+dJjUTJdlHsWQ=="
   "resolved" "https://registry.npmjs.org/yaml/-/yaml-2.3.1.tgz"
   "version" "2.3.1"
-
-"yarn@^1.22.19":
-  "integrity" "sha512-/0V5q0WbslqnwP91tirOvldvYISzaqhClxzyUKXYxs07yUILIs5jx/k6CFe8bvKSkds5w+eiOqta39Wk3WxdcQ=="
-  "resolved" "https://registry.npmjs.org/yarn/-/yarn-1.22.19.tgz"
-  "version" "1.22.19"
 
 "yocto-queue@^0.1.0":
   "integrity" "sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q=="
