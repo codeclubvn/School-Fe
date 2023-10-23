@@ -21,11 +21,13 @@ SheetPortal.displayName = SheetPrimitive.Portal.displayName;
 
 const SheetOverlay = React.forwardRef<
   React.ElementRef<typeof SheetPrimitive.Overlay>,
-  React.ComponentPropsWithoutRef<typeof SheetPrimitive.Overlay>
->(({ className, ...props }, ref) => (
+  React.ComponentPropsWithoutRef<typeof SheetPrimitive.Overlay> & { isMobile?: boolean }
+>(({ className, isMobile, ...props }, ref) => (
   <SheetPrimitive.Overlay
     className={cn(
-      'fixed inset-0 z-50 bg-black/[.5] backdrop-blur-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0',
+      `fixed inset-0 z-50 ${
+        isMobile ? 'bg-white' : 'bg-black/[.5]'
+      }  backdrop-blur-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0`,
       className,
     )}
     {...props}
@@ -55,25 +57,30 @@ const sheetVariants = cva(
 
 interface SheetContentProps
   extends React.ComponentPropsWithoutRef<typeof SheetPrimitive.Content>,
-    VariantProps<typeof sheetVariants> {}
+    VariantProps<typeof sheetVariants> {
+  isMobile?: boolean;
+}
 
 const SheetContent = React.forwardRef<
   React.ElementRef<typeof SheetPrimitive.Content>,
   SheetContentProps
->(({ side = 'right', className, children, ...props }, ref) => (
+>(({ side = 'right', className, children, isMobile, ...props }, ref) => (
   <SheetPortal>
-    <SheetOverlay />
+    {isMobile ? null : <SheetOverlay isMobile={isMobile} />}
+
     <SheetPrimitive.Content
       ref={ref}
       className={cn(sheetVariants({ side }), className)}
       {...props}
     >
       {children}
-      <div className="w-[28px] h-[28px] rounded-sm bg-white absolute right-[-10px] top-4 flex justify-center items-center">
-        <SheetPrimitive.Close className=" rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none disabled:pointer-events-none data-[state=open]:bg-secondary">
-          <LiaTimesSolid className="h-4 w-4 text-gray-500 font-bold" />
-        </SheetPrimitive.Close>
-      </div>
+      {!isMobile ? (
+        <div className="w-[28px] h-[28px] rounded-sm bg-white absolute right-[-10px] top-4 flex justify-center items-center">
+          <SheetPrimitive.Close className=" rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none disabled:pointer-events-none data-[state=open]:bg-secondary">
+            <LiaTimesSolid className="h-4 w-4 text-gray-500 font-bold" />
+          </SheetPrimitive.Close>
+        </div>
+      ) : null}
     </SheetPrimitive.Content>
   </SheetPortal>
 ));

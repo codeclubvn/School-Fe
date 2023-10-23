@@ -2,8 +2,6 @@
 
 import Image from 'next/image';
 
-import { useState } from 'react';
-
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 
@@ -64,10 +62,9 @@ const ListBar = [
   },
 ];
 const SideBar = () => {
-  const [active, setActive] = useState(false);
   return (
-    <div>
-      <div className="w-[178px] h-[450px] flex flex-col gap-6 mt-8 ">
+    <div className="overflow-y-auto max-h-[100vh] ">
+      <div className="w-[178px] h-[450px] flex flex-col gap-6 mt-16  ">
         {ListBar.map((item) => {
           return (
             <div
