@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 
 import { Button } from '@/components/ui/button';
@@ -9,7 +11,6 @@ import contact from '../../../public/img/contact.png';
 import manTech from '../../../public/img/mantalkwithevo.png';
 import teachImg from '../../../public/img/teaching.png';
 import Arrow from '../../config/icon/arrow';
-import ArrowFly from '../../config/icon/arrowfly';
 import Audio from '../../config/icon/audio';
 import Ellip from '../../config/icon/ellip';
 import Live from '../../config/icon/live';

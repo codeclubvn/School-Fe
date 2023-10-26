@@ -1,9 +1,7 @@
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 
-import MainLayout from '@/components/layout/MainLayout';
-
-import AppProvider from '../providers';
+import AppProvider from './providers';
 
 import '@/styles/globals.css';
 
@@ -20,9 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <AppProvider>
-          <MainLayout>{children}</MainLayout>
-        </AppProvider>
+        <AppProvider>{children}</AppProvider>
       </body>
     </html>
   );
