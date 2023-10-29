@@ -32,7 +32,7 @@ const LeftMenu = ({ isMobile }: { isMobile?: boolean }) => {
 
         <SheetContent
           side="left"
-          className={cn(`w-[240px] lg:border-none lg:shadow-none`)}
+          className={cn(`w-[208px] lg:border-none lg:shadow-none`)}
           isMobile={isMobile}
         >
           <SheetHeader>

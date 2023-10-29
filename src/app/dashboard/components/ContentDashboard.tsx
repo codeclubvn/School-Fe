@@ -1,9 +1,9 @@
-import LeftMenu from './LeftMenu';
+import LeftMenuDesktop from './LeftMenuDesktop';
 
-const ContentDashboard = ({ isMobile }: { isMobile?: boolean }) => {
+const ContentDashboard = () => {
   return (
     <div className="w-full h-[100vh] bg-[#FAFCFE] relative">
-      <LeftMenu isMobile={isMobile} />
+      <LeftMenuDesktop />
     </div>
   );
 };

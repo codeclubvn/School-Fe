@@ -50,7 +50,7 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="pt-12 pr-20">
+    <div className="pt-12 pr-20 lg:ml-56">
       <TopCollection title="Add new student" />
       <InfoForm className="mt-5" title="Student Info">
         <div className="flex gap-2.5">

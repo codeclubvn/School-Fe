@@ -18,12 +18,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={roboto.className}>
-        <AppProvider>
-          <MainLayout>{children}</MainLayout>
-        </AppProvider>
-      </body>
-    </html>
+    <AppProvider>
+      <MainLayout>{children}</MainLayout>
+    </AppProvider>
   );
 }

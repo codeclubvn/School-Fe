@@ -68,7 +68,7 @@ const SideBar = () => {
         {ListBar.map((item) => {
           return (
             <div
-              className={`flex gap-4 items-center ml-[10px] hover:cursor-pointer hover:opacity-80 relative ${
+              className={`flex gap-4 items-center ml-[10px] px-4 hover:cursor-pointer hover:opacity-80 relative ${
                 item.active
                   ? "after:content-[''] after:bg-green-600 after:absolute after:top-[-4px] after:left-[-30px] after:w-1 after:h-[130%] after:rounded-r-3xl after:z-[-1]"
                   : ''
