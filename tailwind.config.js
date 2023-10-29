@@ -18,6 +18,7 @@ module.exports = {
     extend: {
       colors: {
         bgDashboard: '#FAFCFE',
+        skyblue100: '#203B54',
         primaryColor: 'var(--primary-color)',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
